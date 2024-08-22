@@ -1,7 +1,7 @@
 ### Sniffer
 
-  diag sniffer packet any 'host 10.11.3.5 and icmp' 1
-  !
+'diag sniffer packet any 'host 10.11.3.5 and icmp' 1'
+'!'
 
 
 ### Flow Debugs
