@@ -36,7 +36,6 @@ diag debug disable
 diag debug flow trace stop
 diag debug flow filter clear
 diag debug reset
-!
 ```
 #### Enable Flow Debugs
 ```
@@ -45,9 +44,22 @@ diag debug flow filter daddr 10.19.19.99
 diagnose debug flow trace start 100
 diagnose debug flow show function-name enable
 diagnose debug enable
-!
 ```
 ---
+
+
+### Routing Debugging
+Check policy routes/ sdwan rules for given traffic
+Ex: dia ip proute match 10.15.1.1 10.19.19.20 TXS-VMWD-NET 6 161
+```
+dia ip proute match <destination IP> <Source IP> <incoming interface> <proto - 6(tcp) 17(udp)> <destination port number>
+```
+
+SD-WAN debugging
+```
+dia sys sdwan <options> ...
+```
+
 
 
 ### Fortigate LLDP command
@@ -57,4 +69,19 @@ diag sniff pack any 'ether proto 0x88cc' 4
 ---
 
 
-#
+### Clear Sessions
+1. Filter for required session
+```
+diag sys session filter src <source_ip>
+```
+2. List all sessions from filtered IP
+```
+diag sys session list
+```
+3. Clear sessions for the filtered IP
+```
+diag sys session clear
+```
+
+**WARNING** - *if you do not filter first and run the clear command you will clear ALL active sessions!!*
+
