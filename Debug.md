@@ -50,7 +50,8 @@ diagnose debug enable
 
 ### Routing Debugging
 Check policy routes/ sdwan rules for given traffic
-Ex: dia ip proute match 10.15.1.1 10.19.19.20 TXS-VMWD-NET 6 161
+
+*Ex: dia ip proute match 10.15.1.1 10.19.19.20 TXS-VMWD-NET 6 161*
 ```
 dia ip proute match <destination IP> <Source IP> <incoming interface> <proto - 6(tcp) 17(udp)> <destination port number>
 ```
