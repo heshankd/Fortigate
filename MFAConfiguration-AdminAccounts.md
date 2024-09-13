@@ -30,6 +30,10 @@ config router static
     next
 end
 ```
+![image](https://github.com/user-attachments/assets/321ba8a4-7924-4e1c-8945-0686f32732ef)
+![image](https://github.com/user-attachments/assets/85868772-4808-4b5f-8d73-fd3116990fbc)
+
+
 ### Troubleshoot - Forti Token Installing Error
 Add a static route to fortigate resitration servers
 ```
@@ -66,8 +70,6 @@ config system fortiguard
      set fortiguard-anycast disable
 end 
 ```
-![image](https://github.com/user-attachments/assets/321ba8a4-7924-4e1c-8945-0686f32732ef)
-![image](https://github.com/user-attachments/assets/85868772-4808-4b5f-8d73-fd3116990fbc)
 
 Sources
 https://community.fortinet.com/t5/Support-Forum/FortiGate-does-not-send-Two-Factor-activation-code/m-p/82385
