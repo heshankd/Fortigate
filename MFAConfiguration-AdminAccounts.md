@@ -71,7 +71,9 @@ config system fortiguard
 end 
 ```
 
+
 Sources
+
 https://community.fortinet.com/t5/Support-Forum/FortiGate-does-not-send-Two-Factor-activation-code/m-p/82385
 ---
 
